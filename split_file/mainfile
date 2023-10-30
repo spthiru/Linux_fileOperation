@@ -1,0 +1,500 @@
+   72  ls
+   73  cd STM/arm_compiler~
+   74  mkdir STM/arm_compiler~
+   75  mkdir STM/arm_compiler
+   76  ls
+   77  mkdir STM
+   78  mkdir ~/Documents/STM/arm_compiler
+   79  cd ~/Documents/STM/arm_compiler
+   80  wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
+   81  cd gcc-arm-none-eabi-10.3-2021.10/
+   82  ls bin/
+   83  cd bin/
+   84  ls
+   85  source ~/.bashrc
+   86  arm-none-eabi-gcc --version
+   87  sudo apt install st-stlink-udev-rules stlink-tools stlink-gui openocd
+   88  sudo apt-get install st-stlink-udev-rules stlink-tools stlink-gui openocd
+   89  sudo apt-get install stlink-tools stlink-gui openocd
+   90  lsusb
+   91  st-info --probe
+   92  cd ..
+   93  lsusb 
+   94  st-info 
+   95  st-info --probe
+   96  cd
+   97  init 0
+   98  top
+   99  init 0
+  100  init 6
+  101  cd git/
+  102  ls
+  103  cd Eagle_FCS/
+  104  ls
+  105  cd include/
+  106  ls
+  107  git diff
+  108  vim stm32f103c8.h 
+  109  git sta
+  110  git status 
+  111  git pull 
+  112  vim stm32f103c8.h 
+  113  git log 
+  114  vim stm32f103c8.h 
+  115  cd ..
+  116  ls
+  117  git diff
+  118  git diff > stm32f103c8.h.diff
+  119  ls
+  120  vim stm32f103c8.h.diff 
+  121  :Wq
+  122  ls
+  123  \
+  124  ls
+  125  cd Documents/
+  126  ls
+  127  cd STM/arm_compiler/gcc-arm-none-eabi-10.3-2021.10/
+  128  cd
+  129  ~/Documents/STM/arm_compiler/gcc-arm-none-eabi-10.3-2021.10$ arm-none-eabi-gcc --version
+  130  cd Documents/STM/arm_compiler/gcc-arm-none-eabi-10.3-2021.10/
+  131  sudo apt install st-stlink-udev stlink-tools stlink-gui openocd
+  132  sudo apt install st-stlink stlink-tools stlink-gui openocd
+  133  sudo apt install stlink-tools stlink-gui openocd
+  134  sudo apt install st-stlink-udev stlink-gui openocd
+  135  lsusb 
+  136  st-info --probe
+  137  st-flash write stm32f401ccux.elf 0x08000000
+  138  openocd -s openocd.cfg 
+  139  openocd -s openocd
+  140  openocd
+  141  ls
+  142  cd
+  143  cd Documents/STM/
+  144  ls
+  145  cd stm32f103c8b6/
+  146  cd
+  147  cd Documents/STM/stm32f103c8t6/
+  148  ls
+  149  cd led_blink_1s/
+  150  ls
+  151  openocd -s openocd.cfg 
+  152  vi main.c
+  153  make
+  154  arm-none-eabi-gdb stm32f103c8t6.elf 
+  155  sudo apt install libncurses5-dev 
+  156  arm-none-eabi-gdb stm32f103c8t6.elf 
+  157  sudo apt install libncurses5
+  158  arm-none-eabi-gdb stm32f103c8t6.elf 
+  159  init 0
+  160  cd
+  161  vi ~/.vimrc
+  162  ls
+  163  sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
+  164  sudo apt update
+  165  sudo apt install --install-recommends kicad
+  166  ld
+  167  ls
+  168  cd Rectifier/
+  169  ls
+  170  cd Rectifier/
+  171  ls
+  172  CD
+  173  cd
+  174  ls
+  175  cd Documents/
+  176  ls
+  177  cd STM/stm32f103c8t6/
+  178  ls
+  179  cd SysTick_timer/
+  180  ls
+  181  vi main.c
+  182  ls
+  183  cp Makefile startup_stm32f103c8tx.s STM32F103C8TX_FLASH.ld openocd.cfg ~/git/Eagle_FCS/
+  184  ls
+  185  cd ~/git/Eagle_FCS/
+  186  ls
+  187  git status
+  188  vim include/stm32f103c8.h
+  189  git checkout include/stm32f103c8.h
+  190  git status
+  191  ls
+  192  vim Makefile 
+  193  make
+  194  vim Makefile 
+  195  make
+  196  ls
+  197  vim include/stm32f103c8.h 
+  198  make
+  199  vim include/stm32f103c8.h 
+  200  make
+  201  vim include/stm32f103c8.h 
+  202  make
+  203  vim include/stm32f103c8.h 
+  204  make
+  205  vim include/stm32f103c8.h 
+  206  make
+  207  vim include/stm32f103c8.h 
+  208  make
+  209  vim include/stm32f103c8.h 
+  210  make
+  211  vim include/stm32f103c8.h 
+  212  make
+  213  vim include/stm32f103c8.h 
+  214  make
+  215  vim include/stm32f103c8.h 
+  216  make
+  217  exit
+  218  ls
+  219  cd git/Eagle_FCS/
+  220  ls
+  221  history
+  222  vi include/stm32f103c8.h 
+  223  make
+  224  vi include/stm32f103c8.h 
+  225  make
+  226  ls
+  227  git diff
+  228  git diff > stm32f103c8.h.diff
+  229  ls
+  230  vi stm32f103c8.h.diff 
+  231  cd
+  232  init 0
+  233  lsusb
+  234  ls
+  235  cd git/Eagle_FCS/include/
+  236  ls
+  237  histroy
+  238  history 
+  239  cd ..
+  240  vi include/stm32f103c8.h 
+  241  git diff
+  242  git diff > stm32.c.diff
+  243  ls
+  244  vi stm32.c.diff 
+  245  ls
+  246  git diff > stm32.c
+  247  ls
+  248  vi stm32.c
+  249  rm stm32.c
+  250  ls
+  251  make
+  252  cd include/
+  253  ls
+  254  vi stm32f103c8.h 
+  255  cd ..\
+  256  git commit 
+  257  git log
+  258  cd include/
+  259  ls
+  260  git commit \
+  261  git commit 
+  262  cd ..
+  263  history
+  264  vi include/stm32f103c8.h 
+  265  cd ..
+  266  ls
+  267  cd stm32f401cc/
+  268  ls
+  269  cd stk_timer/
+  270  ls
+  271  vi main.c 
+  272  cd ..
+  273  cd stm32f401cc/
+  274  ls
+  275  cd stk_timer/
+  276  la
+  277  cd interrupt/
+  278  ls
+  279  vi main.c 
+  280  vi main.h
+  281  arm-none-eabi-gdb stm32f103c8t6.elf 
+  282  ls
+  283  cd
+  284  cd Documents/
+  285  ls
+  286  cd STM/
+  287  ls
+  288  cd stm32f103c8t6/
+  289  ls
+  290  vi SysTick_timer/
+  291  vi SysTick_timer
+  292  cd SysTick_timer
+  293  ls
+  294  vi main.c
+  295  make
+  296  vi main.c
+  297  make
+  298  vi main.c
+  299  vi main.h
+  300  vi main.c
+  301  make
+  302  ls
+  303  mkdir interrupt
+  304  cd interrupt
+  305  ls
+  306  vi main.c
+  307  vi main.h
+  308  make
+  309  cd ..
+  310  vi main.c
+  311  make
+  312  vi main.c
+  313  make
+  314  vi main.c
+  315  rm .main.c.swp 
+  316  vi main.c
+  317  make
+  318  vi main.c
+  319  make
+  320  vi main.c
+  321  make
+  322  vi main.c
+  323  make
+  324  vi main.c
+  325  make
+  326  vi main.c
+  327  make
+  328  vi main.c
+  329  make
+  330  vi main.c
+  331  make
+  332  vi main.c
+  333  make
+  334  vi main.c
+  335  make
+  336  vi main.c
+  337  make
+  338  vi main.c
+  339  make
+  340  vi main.c
+  341  make
+  342  vi main.c
+  343  make
+  344  vi main.c
+  345  make
+  346  vi main.c
+  347  ake
+  348  make
+  349  vi main.c
+  350  make
+  351  vi main.c
+  352  cd
+  353  update skypeforlinux-64.deb 
+  354  sudo apt update 
+  355  sudo apt upgrade 
+  356  sudo install minicom
+  357  sudo minicom
+  358  sudo apt-get install minicom 
+  359  sudo minicom 
+  360  minicom 
+  361  sudo apt-get install minicom 
+  362  sudo minicom 
+  363  minicom --version 
+  364  sudo minicom 
+  365  sudo minicom -s
+  366  minicom -D /dev/ttyUSB0
+  367  sudo minicom -D /dev/ttyUSB0
+  368  minicom -D /dev/ttyUSB0
+  369  sudo apt-get update 
+  370  sudo apt-get upgrade 
+  371  minicom -D /dev/ttyUSB0
+  372  sudo minicom 
+  373  ls
+  374  cd git/
+  375  ls
+  376  cd Eagle_FCS/
+  377  ls
+  378  git status 
+  379  git add Makefile 
+  380  ls
+  381  git add stm32f103c8.h.diff 
+  382  git commit 4
+  383  git commit 
+  384  git config --global user.email "arasumuthu026@gmail.com"
+  385  git config --global user.name "Mutharasu"
+  386  git commit 
+  387  vi Makefile 
+  388  vi include/stm32f103c8.h 
+  389  cd include/
+  390  ls
+  391  git add Makefile
+  392  cd ..
+  393  ls
+  394  git commit startup_stm32f103c8tx.s
+  395  git commit STM32F103C8TX_FLASH.ld 
+  396  ls
+  397  vi eagle_fcs_main.s 
+  398  git add STM32F103C8TX_FLASH.ld 
+  399  git add startup_stm32f103c8tx.s
+  400  git commit 
+  401  ls
+  402  no sir
+  403  ls
+  404  make clean
+  405  ls
+  406  git diff
+  407  vi include/stm32f103c8.h 
+  408  git diff
+  409  vi include/stm32f103c8.h 
+  410  git diff
+  411  vi include/stm32f103c8.h 
+  412  git diff
+  413  vi include/stm32f103c8.h 
+  414  git diff
+  415  ls
+  416  make
+  417  make clean
+  418  make
+  419  ls
+  420  vim Makefile 
+  421  ls
+  422  git status
+  423  git rm stm32f103c8.h.diff
+  424  git rm -f stm32f103c8.h.diff
+  425  git status
+  426  vim STM32F103C8TX_FLASH.ld 
+  427  vim ~/.vimrc
+  428  vim STM32F103C8TX_FLASH.ld 
+  429  make
+  430  ls
+  431  git add openocd.cfg 
+  432  ls
+  433  git status
+  434  git commit
+  435  git config 
+  436  git config --global core.editor nano
+  437  git config --global core.editor vim
+  438  git commit 
+  439  git log
+  440  git status
+  441  git pull
+  442  git diff
+  443  git commit
+  444  git commit include/stm32f103c8.h
+  445  git log
+  446  git status
+  447  clear
+  448  git log
+  449  git diff 0a0c77a768 5233c27f1bf
+  450  git diff 0a0c77a768 5233c27f1bf > 0a0c77a768__5233c27f1bf.diff
+  451  lsl
+  452  s
+  453  lsl
+  454  s
+  455  ls
+  456  make
+  457  ls
+  458  git push
+  459  git pull
+  460  ls
+  461  init 0
+  462  ls
+  463  cd ..
+  464  cd stm32f103c8t6/SysTick_timer/
+  465  vi main.h 
+  466  vi arm_config.h 
+  467  openocd -s openocd.cfg 
+  468  l
+  469  openocd -s openocd
+  470  l
+  471  ls
+  472  cd .
+  473  cd
+  474  cd Documents/STM/stm32f103c8t6/
+  475  ls
+  476  cd SysTick_timer/
+  477  ls
+  478  \
+  479  vi main.c
+  480  openocd -s openocd.cfg 
+  481  openocd -s openocd
+  482  ls
+  483  vi stm32f103c8.h 
+  484  ls
+  485  vi Systick_timer.h 
+  486  vi spi.h 
+  487  vi Systick_timer.h 
+  488  c
+  489  cd
+  490  cd Documents/STM/stm32f103c8t6/SysTick_timer/
+  491  ls
+  492  vi main.c
+  493  make
+  494  vi main.c
+  495  ake
+  496  make
+  497  ls
+  498  cd git/
+  499  ls
+  500  cd Eagle_FCS/
+  501  ls
+  502  git pull
+  503  make
+  504  vi Makefile 
+  505  git status 
+  506  vi include/stm32f103c8.h 
+  507  make
+  508  make clean 
+  509  clean
+  510  cd ..
+  511  dir pull Eagle_FCS/
+  512  cd Eagle_FCS/
+  513  ls
+  514  vi Makefile 
+  515  git log
+  516  git status 
+  517  git kog
+  518  git log
+  519  make
+  520  ls
+  521  cd include/
+  522  ls
+  523  vi types.h 
+  524  ls
+  525  vi stm32f103c8.h 
+  526  git diff
+  527  git log
+  528  vi stm32f103c8.h 
+  529  git diff
+  530  ls
+  531  vi spi.h 
+  532  cp spi.h Systick_timer.h
+  533  ls
+  534  vi Systick_timer.h 
+  535  vi types.h 
+  536  vi s
+  537  vi stm32f103c8.h 
+  538  git diff
+  539  arm-none-eabi-gdb stm32f103c8t6.elf 
+  540  init 0
+  541  cd
+  542  cd git/
+  543  ls
+  544  cd Eagle_FCS/
+  545  ls
+  546  make
+  547  git pull
+  548  sudo apt update 
+  549  sudo apt upgrade 
+  550  cd Documents/
+  551  cd STM/stm32f103c8t6/
+  552  l
+  553  ls
+  554  cd SysTick_timer/
+  555  ls
+  556  vi stm32f103c8t6.elf 
+  557  vi stm32f103c8t6.bin 
+  558  vi stm32f103c8t6.hex 
+  559  vi stm32f103c8t6.elf 
+  560  vi stm32f103c8t6.map 
+  561  ls
+  562  vi main.c
+  563  init 0
+  564  init 6
+  565  init 0
+  566  init 6
+  567  arm-none-eabi-gdb stm32f103c8t6.elf 
+  568  openocd -s openocd.cfg 
+  569  ls
+  570  cd Documents/STM/stm32f103c8t6/
+  571  ls
