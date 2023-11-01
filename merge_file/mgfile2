@@ -1,0 +1,16 @@
+In the meantime, US antitrust legislation forced the breakup of AT&T (legal
+maneuvers began in the mid-1970s, and the breakup became effective in 1982),
+with the consequence that, since it no longer held a monopoly on the telephone
+system, the company was permitted to market UNIX. This resulted in the release of
+System III (three) in 1981. System III was produced by AT&T’s UNIX Support
+Group (USG), which employed many hundreds of developers to enhance UNIX
+and develop UNIX applications (notably, document preparation packages and soft-
+ware development tools). The first release of System V (five) followed in 1983, and
+a series of releases led to the definitive System V Release 4 (SVR4) in 1989, by
+which time System V had incorporated many features from BSD, including net-
+working facilities. System V was licensed to a variety of commercial vendors, who
+used it as the basis of their UNIX implementations.
+Thus, in addition to the various BSD distributions spreading through aca-
+demia, by the late 1980s, UNIX was available in a range of commercial implementa-
+tions on various hardware. These implementations included Sun’s SunOS and later
+Solaris, Digital’s Ultrix and OSF/1 (nowadays, after a series of renamings

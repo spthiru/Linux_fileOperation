@@ -1,0 +1,22 @@
+Over the period of these releases, the use and reputation of UNIX began to spread,
+first within AT&T, and then beyond. An important contribution to this growing
+awareness was the publication of a paper on UNIX in the widely read journal
+Communications of the ACM ([Ritchie & Thompson, 1974]).
+At this time, AT&T held a government-sanctioned monopoly on the US tele-
+phone system. The terms of AT&T’s agreement with the US government prevented
+it from selling software, which meant that it could not sell UNIX as a product.
+Instead, beginning in 1974 with Fifth Edition, and especially with Sixth Edition,
+AT&T licensed UNIX for use in universities for a nominal distribution fee. The
+university distributions included documentation and the kernel source code (about
+10,000 lines at the time).
+AT&T’s release of UNIX into universities greatly contributed to the popularity
+and use of the operating system, and by 1977, UNIX was running at some 500 sites,
+including 125 universities in the United States and several other countries. UNIX
+offered universities an interactive multiuser operating system that was cheap yet
+powerful, at a time when commercial operating systems were very expensive. It also
+gave university computer science departments the source code of a real operating
+system, which they could modify and offer to their students to learn from and
+experiment with. Some of these students, armed with UNIX knowledge, became
+UNIX evangelists. Others went on to found or join the multitude of startup compa-
+nies selling inexpensive computer workstations running the easily ported UNIX
+operating system.
