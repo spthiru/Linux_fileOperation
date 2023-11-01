@@ -1,0 +1,100 @@
+Linux is a member of the UNIX family of operating systems. In computing terms,
+UNIX has a long history. The first part of this chapter provides a brief outline of
+that history. We begin with a description of the origins of the UNIX system and the
+C programming language, and then consider the two key currents that led to the
+Linux system as it exists today: the GNU project and the development of the Linux
+kernel.
+One of the notable features of the UNIX system is that its development was not
+controlled by a single vendor or organization. Rather, many groups, both commer-
+cial and noncommercial, contributed to its evolution. This history resulted in many
+innovative features being added to UNIX, but also had the negative consequence
+that UNIX implementations diverged over time, so that writing applications that
+worked on all UNIX implementations became increasingly difficult. This led to a
+drive for standardization of UNIX implementations, which we discuss in the sec-
+ond part of this chapter.
+Two definitions of the term UNIX are in common use. One of these denotes
+operating systems that have passed the official conformance tests for the Sin-
+gle UNIX Specification and thus are officially granted the right to be branded
+as “UNIX” by The Open Group (the holders of the UNIX trademark). At the
+time of writing, none of the free UNIX implementations (e.g., Linux and
+FreeBSD) has obtained this branding.The other common meaning attached to the term UNIX denotes those
+systems that look and behave like classical UNIX systems (i.e., the original Bell
+Laboratories UNIX and its later principal offshoots, System V and BSD). By
+this definition, Linux is generally considered to be a UNIX system (as are the
+modern BSDs). Although we give close attention to the Single UNIX Specifica-
+tion in this book, we’ll follow this second definition of UNIX, so that we’ll
+often say things such as “Linux, like other UNIX implementations. . . .”
+The first UNIX implementation was developed in 1969 (the same year that Linus
+Torvalds was born) by Ken Thompson at Bell Laboratories, a division of the tele-
+phone corporation, AT&T. It was written in assembler for a Digital PDP-7 mini-
+computer. The name UNIX was a pun on MULTICS (Multiplexed Information and
+Computing Service), the name of an earlier operating system project in which AT&T
+collaborated with Massachusetts Institute of Technology (MIT) and General Elec-
+tric. (AT&T had by this time withdrawn from the project in frustration at its initial
+failure to develop an economically useful system.) Thompson drew several ideas
+for his new operating system from MULTICS, including a tree-structured file sys-
+tem, a separate program for interpreting commands (the shell), and the notion of
+files as unstructured streams of bytes.
+In 1970, UNIX was rewritten in assembly language for a newly acquired Digital
+PDP-11 minicomputer, then a new and powerful machine. Vestiges of this PDP-11
+heritage can be found in various names still used on most UNIX implementations,
+including Linux.
+A short time later, Dennis Ritchie, one of Thompson’s colleagues at Bell Labo-
+ratories and an early collaborator on UNIX, designed and implemented the C pro-
+gramming language. This was an evolutionary process; C followed an earlier
+interpreted language, B. B was initially implemented by Thompson and drew many
+of its ideas from a still earlier programming language named BCPL. By 1973, C had
+matured to a point where the UNIX kernel could be almost entirely rewritten in
+the new language. UNIX thus became one of the earliest operating systems to be
+written in a high-level language, a fact that made subsequent porting to other hard-
+ware architectures possible.
+The genesis of C explains why it, and its descendant C++, have come to be used
+so widely as system programming languages today. Previous widely used languages
+were designed with other purposes in mind: FORTRAN for mathematical tasks
+performed by engineers and scientists; COBOL for commercial systems processing
+streams of record-oriented data. C filled a hitherto empty niche, and unlike FOR-
+TRAN and COBOL (which were designed by large committees), the design of C
+arose from the ideas and needs of a few individuals working toward a single goal:
+developing a high-level language for implementing the UNIX kernel and associated
+software. Like the UNIX operating system itself, C was designed by professional
+programmers for their own use. The resulting language was small, efficient, power-
+ful, terse, modular, pragmatic, and coherent in its design.
+Between 1969 and 1979, UNIX went through a number of releases, known as editions.
+Essentially, these releases were snapshots of the evolving development version at
+AT&T. [Salus, 1994] notes the following dates for the first six editions of UNIX:
+z
+z
+z
+z
+z
+z
+First Edition, November 1971: By this time, UNIX was running on the PDP-11
+and already had a FORTRAN compiler and versions of many programs still
+used today, including ar, cat, chmod, chown, cp, dc, ed, find, ln, ls, mail, mkdir, mv,
+rm, sh, su, and who.
+Second Edition, June 1972: By this time, UNIX was installed on ten machines
+within AT&T.
+Third Edition, February 1973: This edition included a C compiler and the first
+implementation of pipes.
+Fourth Edition, November 1973: This was the first version to be almost totally
+written in C.
+Fifth Edition, June 1974: By this time, UNIX was installed on more than 50 systems.
+Sixth Edition, May 1975: This was the first edition to be widely used outside
+AT&T.
+Over the period of these releases, the use and reputation of UNIX began to spread,
+first within AT&T, and then beyond. An important contribution to this growing
+awareness was the publication of a paper on UNIX in the widely read journal
+Communications of the ACM ([Ritchie & Thompson, 1974]).
+At this time, AT&T held a government-sanctioned monopoly on the US tele-
+phone system. The terms of AT&T’s agreement with the US government prevented
+it from selling software, which meant that it could not sell UNIX as a product.
+Instead, beginning in 1974 with Fifth Edition, and especially with Sixth Edition,
+AT&T licensed UNIX for use in universities for a nominal distribution fee. The
+university distributions included documentation and the kernel source code (about
+10,000 lines at the time).
+AT&T’s release of UNIX into universities greatly contributed to the popularity
+and use of the operating system, and by 1977, UNIX was running at some 500 sites,
+including 125 universities in the United States and several other countries. UNIX
+offered universities an interactive multiuser operating system that was cheap yet
+powerful, at a time when commercial operating systems were very expensive. It also
+gave university computer science departments the source code of a real operating
