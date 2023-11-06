@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
   if(writeFile == -1)
   {
     perror("error writing file");
+    close(numRead);
     close(fd);
     exit(-3);
   }
@@ -55,10 +56,14 @@ int main(int argc, char *argv[])
   if(writeFile1 == -1)
   {
     perror("error writing file");
+    close(numRead);
+    close(writeFile);
+    close(fd);
     exit(-5);
   }
 
   // int close(int fd);
+  close(writeFile1);
   close(fd);
   exit(0);
 }
