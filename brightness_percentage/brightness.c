@@ -1,3 +1,4 @@
+//header file incuction
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -6,7 +7,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// macro
 #define BACK_LIGHT "/sys/class/backlight/amdgpu_bl0/actual_brightness"
+
+//main function
 int main()
 {
   int fd, openFlag;
@@ -16,8 +20,9 @@ int main()
   char buf1[50]="Brightness : ";
   char buf[255];
 
-  openFlag = O_RDONLY;
+  openFlag = O_RDONLY;//open flag for source file
 
+  //open source file
   //int open(const char *pathname, int flags);
   fd = open(BACK_LIGHT, openFlag);
 
