@@ -31,43 +31,63 @@ int main(int argc, char *argv[])
   fd = open(argv[1], openFlag);
   if(fd == -1)
   {
-	  
+     perror("error opening source_file");
+     exit(-1);
   }
 
   //int open(const char *pathname, int flags);
   fd1 = open(argv[2], openFlag1, filePerm);
-  if(fd == -1)
+  if(fd1 == -1)
   {
-  	perror("open()");
-  	close(fd);
+     perror("error opening creating output file");
+     close(fd);
+     exit(-2);
   }
 
   //ssize_t read(int fd, void *buf, size_t count);
   readBytes = read(fd, buf, BUF_SIZE);
   if(readBytes == -1)
-  {
-    	perror("read()");
-    	close(fd);
-    	close(fd1);
+  { 
+     perror("error reading source file");
+     close(fd);
+     close(fd1);
+     exit(-3);
   }
 
   for(int i=0; i<readBytes; i++ )
   {
-    bytes++;
+    bytes++; //calculating bytes
     if(buf[i] == 10)
     {
-      newLine++;
+      newLine++; //calculating new lines
     }
 
-    lineNum =(10*inc_val)-1;
+    lineNum =(10*inc_val)-1; //calculation which line  multiply writng in output file
 
     if(newLine == lineNum )
     {
       //off_t lseek(int fd, off_t offset, int whence);
       curSet = lseek(fd, bytes, SEEK_SET);
+      if(curSet == -1)
+      {
+	perror("error set curser of source file");
+	close(readBytes);
+        close(fd1);
+        close(fd);
+        exit(-4);
+      }
 
       //ssize_t read(int fd, void *buf, size_t count);
       readBytes1 = read(fd, buf1, BUF_SIZE);
+      if(readBytes1 == -1)
+      {
+	perror("error reading source file");
+	close(curSet);
+	close(readBytes);
+	close(fd1);
+	close(fd);
+	exit(-5);
+      }
 
       for(int j=0; j < readBytes1; j++)
       {
@@ -80,11 +100,32 @@ int main(int argc, char *argv[])
 
       //ssize_t write(int fd, const void *buf, size_t count);
       writebytes = write(fd1, buf1, bytes2);
-
+      if(writebytes == -1)
+      {
+	perror("error writing a output file");
+	close(readBytes1);
+	close(curSet);
+	close(readBytes);
+	close(fd1);
+	close(fd);
+	exit(-5);
+	      
+      }
       bytesAdd = bytesAdd + bytes2;
 
       //off_t lseek(int fd, off_t offset, int whence);
       curSet1 = lseek(fd1, bytesAdd, SEEK_SET);
+      if(curSet1 == -1)
+      {
+	perror("error set curser a output file");
+	close(writeBytes);
+	close(readBytes1);
+	close(curSet);
+	close(readBytes);
+	close(fd1);
+	close(fd);
+	exit(-6);
+      }
 
       bytes2 = 0;
       //lineNum =(10*inc_val)-1;
