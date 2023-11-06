@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
   fd = open("/sys/class/power_supply/BAT1/capacity", openFlag);
   if(fd == -1)
   {
-    perror("open()");
+    perror("error opening file");
     exit(-1);
   }
 
@@ -36,26 +36,26 @@ int main(int argc, char *argv[])
   numRead = read(fd, buf, BUF_SIZE);
   if(numRead == -1)
   {
-    perror("read()");
+    perror("error reading file");
     close(fd);
-    exit(-1);
+    exit(-2);
   }
 
   //ssize_t write(int fd, const void *buf, size_t count);
   writeFile = write(1, buf1, BUF_SIZE);
   if(writeFile == -1)
   {
-    perror("write()");
+    perror("error writing file");
     close(fd);
-    exit(-1);
+    exit(-3);
   }
 
   //ssize_t write(int fd, const void *buf, size_t count);
   writeFile1 = write(1, buf, numRead);
   if(writeFile1 == -1)
   {
-    perror("write()");
-    exit(-1);
+    perror("error writing file");
+    exit(-5);
   }
 
   // int close(int fd);
