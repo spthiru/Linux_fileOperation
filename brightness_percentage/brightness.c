@@ -27,14 +27,14 @@ int main()
   fd = open(BACK_LIGHT, openFlag);
   if(fd == -1)
   {
-    perror("error opening file");
+    perror("error opening input file");
     exit(-1);
   } 
   //ssize_t read(int fd, void *buf, size_t count);
   numRead = read(fd, buf, 255);
   if(numRead == -1)
   {
-    perror("error reading file");
+    perror("error reading input file");
     close(fd);
     exit(-2);
   }
@@ -42,7 +42,7 @@ int main()
   wt = write(1, buf1,50);
   if(wt == -1)
   {
-    perror("error writing a file");
+    perror("error writing buffer1");
     close(numRead);
     close(fd);
     exit(-3);
@@ -52,7 +52,7 @@ int main()
   wt1 = write(1, buf,numRead);
   if(wt1 == -1)
   {
-    perror("error writing a file");
+    perror("error writing a input file");
     close(wt);
     close(numRead);
     close(fd);
