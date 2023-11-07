@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
   writeFile = write(1, buf1, BUF_SIZE);
   if(writeFile == -1)
   {
-    perror("error writing output buffer1\n");
+    perror("error writing buffer1\n");
     close(numRead);
     close(fd);
     exit(-3);
