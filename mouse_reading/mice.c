@@ -1,3 +1,9 @@
+/***************************************************************************************************************/
+/*   Author         : Thirumoorthy P                                                                           */
+/*   Date           : 7/11/2023                                                                                */
+/*   File name      : mice.c                                                                                   */
+/*   Description    :reading &  writing mouse file                                                             */
+/***************************************************************************************************************/
 #include <sys/types.h>
 #include <linux/input.h>
 #include <sys/stat.h>
@@ -7,6 +13,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//macro
 #define MOUSEFILE "/dev/input/event11" 
 int main()
 {
@@ -30,7 +37,7 @@ int main()
    //infinite loop
     while(1)
     {
-       //reading mouse file
+      //reading mouse file
       //ssize_t read(int fd, void *buf, size_t count);
       readFile = read (fd, &event, sizeof(event));
       if(readFile == -1)
