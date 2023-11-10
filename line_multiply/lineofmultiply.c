@@ -1,5 +1,12 @@
+/***************************************************************************************************************/
+/*   Author         : Thirumoorthy P									       */
+/*   Date           : 7/11/2023                                                                                */
+/*   File name      : lineofmultiply.c                                                                         */
+/*   Description    : read the multiply of 10 line write output file                                           */
+/***************************************************************************************************************/
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <errno.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
