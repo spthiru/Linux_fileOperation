@@ -51,7 +51,7 @@ int main(int argc ,char *argv[])
    if(readBytes1 = -1)
    {
       ret = errno;
-      perror("read: cannot read dup_newfd");
+      perror("read: cannot read txt file");
       goto close_fd1;
    }
    for( i = 0; i < readBytes1; i++)
