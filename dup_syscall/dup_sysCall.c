@@ -48,10 +48,10 @@ int main(int argc ,char *argv[])
    printf("\nnew fd : %d\n",dup_newFd);
    //ssize_t read(int fd, void *buf, size_t count);
    readBytes1 = read(dup_newFd, buf1, BUF_SIZE);
-   if(readBytes1 = -1)
+   if(readBytes1 == -1)
    {
       ret = errno;
-      perror("read: cannot read txt file");
+      perror("read: cannot read text file");
       goto close_fd1;
    }
    for( i = 0; i < readBytes1; i++)
