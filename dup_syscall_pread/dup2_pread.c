@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
    if(fd == -1)
    {
       ret = errno;
-      perror("open:cannot open input file");
+      perror("open:cannot open file:");
       goto exit_ret;
    }
    printf("old fd : %d\n", fd);
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
    if(ret_lseek == -1)
    {
       ret = errno;
-      perror("lseek:cursur not set");
+      perror("lseek:error cursur set to 20 position:");
       goto close_fd; 
    }
    printf("file pointer position : %ld\n",ret_lseek);
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
    if(preadbytes == -1)
    {
       ret = errno;
-      perror("pread:cannot read input file");
+      perror("pread:error read input file:");
       goto close_fd;
    }
    printf("%s\n",buf);
@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
    if(ret_lseek == -1)
    {
       ret = errno;
-      perror("lseek:cannot set cursur");
+      perror("lseek:error set cursur to 20 position");
       goto close_fd1;
    }
    printf("file pointer position : %ld\n",ret_lseek1);
