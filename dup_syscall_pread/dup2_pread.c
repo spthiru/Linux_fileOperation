@@ -1,5 +1,5 @@
 /***************************************************************************************************************/
-/*   Author         : Thirumoorthy P									       */
+/*   Author         : Thirumoorthy P									                                                */
 /*   Date           : 03/12/2023                                                                               */
 /*   File name      : dup2_pread.c                                                                             */
 /*   Description    : understading dup2,pread system call                                                      */
@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define BUF_SIZE 20
+#define BUF_SIZE 21
 
 int main(int argc, char *argv[])
 {
@@ -83,12 +83,11 @@ int main(int argc, char *argv[])
    }
    printf("%s\n", buf1);
 
-
-exit_ret:
-   exit(-ret);
-close_fd:
-   close(fd);
 close_fd1:
    close(fd);
    close(newfd_dup2);
+close_fd:
+   close(fd);
+exit_ret:
+   exit(-ret);
 }
