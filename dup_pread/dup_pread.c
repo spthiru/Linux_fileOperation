@@ -16,7 +16,7 @@
 
 int main(int argc, char *argv[])
 {
-   int fd, ret, newfd_dup2;
+   int fd, ret, newfd_dup;
    ssize_t preadbytes, preadbytes1;
    off_t ret_lseek, ret_lseek1;
    char buf[BUF_SIZE], buf1[BUF_SIZE];
@@ -53,18 +53,18 @@ int main(int argc, char *argv[])
    printf("%s\n",buf);
 
 
-   //int dup2(int oldfd, int newfd);
-   newfd_dup2 = dup(fd);
-   if(newfd_dup2 == -1)
+   //int dup(int oldfd);
+   newfd_dup = dup(fd);
+   if(newfd_dup == -1)
    {
       ret = errno;
-      perror("dup2:cannot change old fd");
+      perror("dup:cannot change old fd");
       goto close_fd;
    }
-   printf("newfd : %d\n", newfd_dup2);
+   printf("newfd : %d\n", newfd_dup);
 
    //off_t lseek(int fd, off_t offset, int whence);
-   ret_lseek1 = lseek(newfd_dup2, 20, SEEK_CUR);
+   ret_lseek1 = lseek(newfd_dup, 20, SEEK_CUR);
    if(ret_lseek == -1)
    {
       ret = errno;
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
    printf("file pointer position : %ld\n",ret_lseek1);
 
    //ssize_t pread(int fd, void *buf, size_t count, off_t offset);
-   preadbytes1 = pread(newfd_dup2, buf1, 20, 0);
+   preadbytes1 = pread(newfd_dup, buf1, 20, 0);
    if(preadbytes == -1)
    {
       ret = errno;
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 
 close_fd1:
    close(fd);
-   close(newfd_dup2);
+   close(newfd_dup);
 close_fd:
    close(fd);
 exit_ret:
