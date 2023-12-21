@@ -1,0 +1,3 @@
+Note: for performance and simplicity reasons, different fields in the stat structure may contain state information from  different  moments
+during  the execution of the system call.  For example, if st_mode or st_uid is changed by another process by calling chmod(2) or chown(2),
+stat() might return the old st_mode together with the new st_uid, or the old st_uid together with the new st_mode.

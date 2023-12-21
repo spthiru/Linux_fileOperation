@@ -1,0 +1,1 @@
+The data transfers performed by readv() and writev() are  atomic the data written by writev() is written as a single block that is

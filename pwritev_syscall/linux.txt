@@ -1,0 +1,1 @@
+These functions return information about a file, in the buffer pointe to by statbuf. No permissions are required on the file itself, but—

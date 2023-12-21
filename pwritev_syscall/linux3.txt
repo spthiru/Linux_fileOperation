@@ -1,0 +1,1 @@
+stat() and fstatat() retrieve information about the file pointed to by pathname; the differences for fstatat() are described below.
