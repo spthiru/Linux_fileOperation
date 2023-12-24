@@ -1,3 +1,9 @@
+/***************************************************************************************************************/
+/*   Author         : Thirumoorthy P                                                                           */
+/*   Date           : 22/12/2023                                                                               */
+/*   File name      : file_moniter.c                                                                           */
+/*   Description    : monitering the parthiculer or multiple file                                              */
+/***************************************************************************************************************/
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
